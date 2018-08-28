@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  </head>
+  <body>
+    <%- include partials/menu.ejs %>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Council Members</h2>
+        </div>
+        <div class="col-xs-4">
+          <h3>Head Council</h3>
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Daeneris" alt="Daeneris profile">
+            <img src="http://www.runeclan.com/images/ranks/1.png">Daeneris <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#daenerisModal">+</button>
+          </p>
+        </div>
+        <div class="col-xs-4">
+          <h3>High Council</h3>
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Im+Twiztid" alt="Im Twiztid profile">
+            <img src="http://www.runeclan.com/images/ranks/2.png">Im Twiztid <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#imTwiztidModal">+</button>
+          </p>
+
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Madoshi" alt="Madoshi profile"> 
+            <img src="http://www.runeclan.com/images/ranks/2.png">Madoshi <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#madoshiModal">+</button>
+          </p>
+          
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=MK+XLII" alt="MK XLII profile">
+            <img src="http://www.runeclan.com/images/ranks/2.png">MK XLII <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#mkxliiModal">+</button>
+          </p>
+
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Photons" alt="Photons profile">
+            <img src="http://www.runeclan.com/images/ranks/2.png">Photons <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#photonsModal">+</button>
+
+          </p>
+        </div>
+
+        <div class="col-xs-4">
+          <h3>Low Council</h3>
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Bigm" alt="Bigm profile">
+            <img src="http://www.runeclan.com/images/ranks/3.png">Bigm <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#bigmModal">+</button>
+          </p>
+
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Heru" alt="Heru profile">
+            <img src="http://www.runeclan.com/images/ranks/3.png">Heru <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#heruModal">+</button>
+          </p>
+
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=RaybeRainbow" alt="RaybeRainbow profile">
+            <img src="http://www.runeclan.com/images/ranks/3.png">RaybeRainbow <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#rayberainbowModal">+</button>
+          </p>
+
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Not+A+Fish" alt="Not A Fish profile">
+            <img src="http://www.runeclan.com/images/ranks/3.png">Not A Fish <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#notafishModal">+</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Advisors</h2>
+        </div>
+        <div class="col-xs-4">
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=bwep" alt="bwep profile">
+            <img src="http://www.runeclan.com/images/ranks/4.png">bwep <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#bwepModal">+</button>
+          </p>          
+        </div>
+
+        <div class="col-xs-4">
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Happy+Sucks" alt="Happy Sucks profile">
+            <img src="http://www.runeclan.com/images/ranks/5.png">Happy Sucks <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#happysucksModal">+</button>
+          </p>
+        </div>
+
+        <div class="col-xs-4">
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Runeshady" alt="Runeshady profile">
+            <img src="http://www.runeclan.com/images/ranks/6.png">Runeshady <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#runeshadyModal">+</button>
+          </p>
+
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Imoti" alt="Imoti profile">
+            <img src="http://www.runeclan.com/images/ranks/6.png">Imoti <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#imotiModal">+</button>
+          </p>
+
+          <p>
+            <img style="width: 35px; height: 35px;" src="http://www.runeclan.com/images/chat_head.php?a=Willispeare" alt="Willispeare profile">
+            <img src="http://www.runeclan.com/images/ranks/6.png">Willispeare <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#willispeareModal">+</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <%- include partials/modal.ejs %>
+  </body>
+</html>
