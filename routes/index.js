@@ -25,7 +25,7 @@ router.get('/api/member', (req, res) => {
     "crafting": [{"id": 88, "exp": 4620867}],
     "smithing": [{"id": 91, "exp": 6003668}],
     "mining": [{"id": 97, "exp": 11275939}],
-    "herblore": [{"id": "exp": 13721491}],
+    "herblore": [{"id": 99,"exp": 13721491}],
     "agility": [{"id": 89, "exp": 5294773}],
     "thieving": [{"id": 78, "exp": 1663866}],
     "slayer": [{"id": 95, "exp": 9322528}],
