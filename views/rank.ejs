@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
+  </head>
+  <body>
+    <%- include partials/menu.ejs %>
+    <div class="container">
+      <h3>Rankings</h3>
+      <table class="table">
+        <thead>
+          <th>Rank</th>
+          <th style="padding-left:30px;">Requirements</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/12.png" alt="recruit icon" /> Recruit</td>
+            <td>
+              <ul>
+                <li>New member to the clan! Welcome to Pro Crasta Nation :)</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/11.png" alt="corporal icon" /> Corporal</td>
+            <td>
+              <ul>
+                <li>A new member to the clan, a probationary rank that is maintained for one (1) month.
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/10.png" alt="segeant icon" /> Sergeant</td>
+            <td>
+              <ul>
+                <li>Continously in the clan for a month. Passing a probationary period</li>
+                <li>Must have at least capped 2 times</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/9.png" alt="lieutenant icon" /> Lieutenant</td>
+            <td>
+              <ul>
+                <li>Continously in the clan between three (3) to six (6) months</li>
+                <li>Must have capped at least 6 times</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/8.png" alt="captain icon" /> Captain</td>
+            <td>
+              <ul>
+                <li>Continously in the clan beween six (6) to twelve (12) months</li>
+                <li>Must have capped at least 18 times</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/7.png" alt="general icon" /> General</td>
+            <td>
+              <ul>
+                <li>Continously in the clan for over an year</li>
+                <li>Must have capped at least 35 times</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Admin+ Ranks</h3>
+      <table class="table">
+        <thead>
+          <th>Rank</th>
+          <th style="padding-left:30px;">Job Description</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/6.png" alt="admin icon" /> Admin</td>
+            <td>
+              <ul>
+                <li>Responsible for maintaining the weekly upkeep of the citadel.</li>
+                <li>Task examples include: upkeep, general capping, citadel cap raffle records</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/5.png" alt="organiser icon" /> Organiser</td>
+            <td>
+              <ul>
+                <li>Responsible for organizing events, maintaining attendance records, keeping the clan informed of events using in-game and out of game tools</li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/4.png" alt="coordinator icon"/> Coordinator</td>
+            <td>
+              <ul>
+                <li>Responsible for recruiting new members to the clan, welcoming guests, and being the general face of the clan.</li>
+                <li>Tasks: Posting on RuneScape Forums to invite, accepting/inviting new applicants, bump the RS Forum thread</li>
+                <li>Updates the members list</li>
+                <li>Reports back to Heru and Photons</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Overseers</h3>
+      <p>Each of the keys runs a team. The teams are as follows: Recruitment, Events, Citadel, Disciplinarian. Picked by a majority vote of the High Council/Leader.</p>
+      <table class="table">
+        <thead>
+          <th>Username</th>
+          <th style="padding-left:30px;">Job Description</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/3.png" alt="overseer icon" /> Not A Fish</td>
+            <td>
+              <ul>
+                <li><b>Discipline Leader</b> reports back to MK XLII.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/3.png" alt="overseer icon" /> Bigm</td>
+            <td>
+              <ul>
+                <li><b>PvM and Events hoster</b> reports back to Photons and Im Twiztid.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/3.png" alt="overseer icon" /> Heru</td>
+            <td>
+              <ul>
+                <li><b>Recruiting Leader</b> reports back to Photons.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/3.png" alt="overseer icon" /> RaybeRainbow</td>
+            <td>
+              <ul>
+                <li><b>Citadel Facilator</b> reports back to Daeneris and Madoshi.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Deputy Owners</h3>
+      <p>Four High Council members, initially chosen by the Leader. Subsequent spots filled by a majority vote between the current High Council and Leader.</p>
+      <table class="table">
+        <thead>
+          <th>Username</th>
+          <th style="padding-left:30px;">Job Description</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/2.png" alt="deputy owner icon" /> Photons</td>
+            <td>
+              <ul>
+                <li><b>Primary Recruit Overseer</b>: Recruits new members and overseer.</li>
+                <li><b>Forum Manager</b>: Maintains clan recruitment forum at Runescape Official Forums.</li>
+                <li><b>Discord Manager</b>: Maintains Discord ranks, bots and channels.</li>
+                <li><b>Website Manager</b>: Maintains <a href="/">www.procrastanation.club</a></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/2.png" alt="deputy owner icon" /> MK XLII</td>
+            <td>
+              <ul>
+                <li><b>Primary Disciplinary</b> & Hand Puppet of the Queen: Second in the charge when the Queen is absent. And one who takes disciplinary actions against delinquent members.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/2.png" alt="deputy owner icon" /> Madoshi</td>
+            <td>
+              <ul>
+                <li><b>Primary Citadel Facilator</b>: Maintains the clan Citadel with proper resources unlock/locked, assists to set up clan meetings</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="http://www.runeclan.com/images/ranks/2.png" alt="deputy owner icon" />Im Twiztid</td>
+            <td>
+              <ul>
+                <li><b>Primary Events & PvM</b>: Coordinates events for such things as PVM, Contests, Tournaments, Clan Wars, Social Gatherings,  etc.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

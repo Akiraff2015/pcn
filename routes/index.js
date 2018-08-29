@@ -3,7 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'PCN' });
+});
+
+router.get('/rankings', (req, res, next) => {
+  res.render('rank', {title: 'Rankings'});
 });
 
 router.get('/api/member', (req, res) => {
