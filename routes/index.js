@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'PCN' });
 });
 
+router.get('/members', (req, res, next) => {
+  res.render('members');
+});
+
 router.get('/rankings', (req, res, next) => {
   res.render('rank', {title: 'Rankings'});
 });
