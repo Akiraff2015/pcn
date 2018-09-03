@@ -1,5 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var rsapi = require('runescape-api');
+var axios = require('axios');
+var _ = require('lodash');
+
+function logInfo(info) {
+    var skills = info.skills;
+
+    console.log(skills);
+}
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -7,14 +16,61 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/members', (req, res, next) => {
-  res.render('members');
+  rsapi.rs.hiscores.clan('Pro Crasta Nation').then(rsclan => {
+    // axios.get(`https://apps.runescape.com/runemetrics/profile/profile?user=${req.params.user}&activities=1`).then(resActivity => {
+      res.render('members', {clan: rsclan});
+    // }).catch(console.error);
+  }).catch(console.error);
+});
+
+router.get('/members/profile/:user', (req, res, next) => {
+  // Fetches palyer hiscore
+  rsapi.rs.hiscores.player(req.params.user).then(rsplayer => {
+      // Fetches clan api => shows user clan xp, kills, position.
+      rsapi.rs.hiscores.clan('Pro Crasta Nation').then(function(rsclan) {
+
+        //Fetchs alog of user.
+        axios.get(`https://apps.runescape.com/runemetrics/profile/profile?user=${req.params.user}&activities=5`).then(resActivity => {
+          let activity = resActivity.data.activities;
+          let filterPlayer =_.filter(rsclan, rsclan => rsclan.player.indexOf(req.params.user) != -1);
+          let overall = rsplayer.skills.overall.level;
+
+          if (resActivity.data.error) {
+            res.render('profile', {
+              user: req.params.user, 
+              overall, 
+              clan: filterPlayer[0],
+              error: true
+            });
+
+          } else {
+            res.render('profile', {
+              user: req.params.user, 
+              overall, 
+              clan: filterPlayer[0],
+              activity,
+              error: false
+            });
+          }
+        }).catch(console.error);
+      }).catch(console.error);
+    }).catch(console.error);
 });
 
 router.get('/rankings', (req, res, next) => {
   res.render('rank', {title: 'Rankings'});
 });
 
-router.get('/api/member', (req, res) => {
+router.get('/api/member/:user', (req, res) => {
+  // rsapi.rs.hiscore.player(req.params.user).then(data => {
+  //   res.json({
+  //     "Profile": [{
+  //       "name": req.params.user
+  //     }],
+  //     ]
+  //   });
+  // })
+  // .catch(console.error);
   res.json({
     "Photons": [
       {"skill": "Overall", "lvl": 2494, "exp": 253899074},
