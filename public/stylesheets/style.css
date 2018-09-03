@@ -15,6 +15,7 @@ footer {
 }
 
 .clock-container {
+  margin-top: 20px;
   color: white;
   background-color: #2c384c;
   border-radius: 10px;
@@ -37,6 +38,7 @@ footer {
   background-color: #2c384c;
   border-radius: 10px;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .dep-container > p:hover {
@@ -63,6 +65,7 @@ footer {
   background-color: #2c384c;
   border-radius: 10px;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .head-quote {
@@ -97,6 +100,7 @@ footer {
   padding: 10px 20px;
   border-radius: 10px;
   height: 200px;
+  margin-top: 20px;
 }
 
 .rs-api-container {
@@ -105,10 +109,6 @@ footer {
 
 .profile-container > p, .profile-events-container > p, .rs-api-container > p{
   border-bottom: 1px solid white;
-}
-
-.rs-api-container {
-  margin-top: 20px;
 }
 
 .table {
